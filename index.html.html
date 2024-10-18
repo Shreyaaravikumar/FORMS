@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>HTML Forms</title>
+       <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        section{
+            min-height: 100vh;
+            background-color: #136c25;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 30px;
+        }
+        form{
+            width: 80%;
+            background-color: #fff;
+            padding: 30px;
+            margin: auto;
+        }
+        fieldset{
+            padding: 20px;
+            margin-top: 20px;
+        }
+        input{
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1rem;
+            margin-top: 8px;
+            border: none;
+            outline: none;
+            /*border-bottom:3px solid #136c25;*/
+            border: 1px solid #ccc;
+        }
+        input[type="image"]{
+            width: 100px;
+            display: block;
+        }
+        input:focus{
+              /*border-bottom:3px solid #136c25;*/
+              background-color: #136c2525;
+              border: 1px solid #136c25;
+        }
+        label{
+            color: #136c25;
+        }
+        legend{
+            font-weight: bold;
+            padding: 10px;
+        }
+        input[type="checkbox"],input[type="radio"]{
+            width: fit-content;
+        }
+
+       </style>
+    </head>
+    <body>
+        <section>
+            <form>
+               <fieldset>
+                <legend>Text</legend>
+                <label for="text">Text</label>
+                <input type="text" placeholder="Enter any text" name="exampletext" id="text" value="" required readonly>
+               </fieldset>
+
+               <fieldset>
+                <legend>email</legend>
+                <label for="email">Email address</label>
+                <input type="email" placeholder="Enter your email" name="email" id="email" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Password</legend>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter your password" name="password" id="password" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Date</legend>
+                <label for="date">Select any Date</label>
+                <input type="date" name="date" id="date" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Date</legend>
+                <label for="date">Select any Date</label>
+                <input type="date" name="date" id="date" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Datetime</legend>
+                <label for="dt">Datetime</label>
+                <input type="datetime" name="datetime" id="dt" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Datetime-Local</legend>
+                <label for="dt1">Datetime-Local</label>
+                <input type="datetime-local" name="datetimelocal" id="dt1" required>
+               </fieldset>
+           
+
+            <fieldset>
+                <legend>Datetime-Local</legend>
+                <label for="dt1">Datetime-Local</label>
+                <input type="datetime-local" name="datetimelocal" id="dt1" required>
+               </fieldset>
+
+               <fieldset>
+                <legend>Color</legend>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+               </fieldset>
+
+               <fieldset>
+                <legend>Url</legend>
+                <label for="website">Url</label>
+                <input type="url" name="website" id="website" minlength="6" maxlength="10">
+               </fieldset>
+
+               <fieldset>
+                <legend>Search</legend>
+                <label for="search">Search</label>
+                <input type="search" name="search" id="search" placeholder="search for something.... ">
+               </fieldset>
+
+               <fieldset>
+                <legend>file</legend>
+                <label for="file">File</label>
+                <input type="file" name="file" id="file">
+               </fieldset>
+
+               <fieldset>
+                <legend>Month</legend>
+                <label for="month">Month</label>
+                <input type="month" name="month" id="month">
+               </fieldset>
+
+               <fieldset>
+                <legend>week</legend>
+                <label for="week">Week</label>
+                <input type="week" name="week" id="week">
+               </fieldset>
+
+               <fieldset>
+                <legend>Number</legend>
+                <label for="number">Number</label>
+                <input type="number" name="number" id="number">
+               </fieldset>
+
+               <fieldset>
+                <legend>tel</legend>
+                <label for="tel">number</label>
+                <input type="tel" name="tel" id="tel" minlength="10" maxlength="13" placeholder="+91 000-0000-000">
+               </fieldset>
+
+               <fieldset>
+                <legend>Image</legend>
+                <label for="image">image</label>
+                <input type="image" name="image" id="image" src="https://cdn-icons-png.freepik.com/256/17049/17049589.png?ga=GA1.1.587478445.1721027363&semt=ais_hybrid" alt="submit" width="100" height="">
+               </fieldset>
+
+               <fieldset>
+                <legend>Image</legend>
+                <label for="langauge">Language</label> <br>
+                <label for="english"><input type="checkbox" name="en" id="english">English</label>
+                <label for="kannada"><input type="checkbox" name="kn" id="kannada">kannada</label>
+                <label for="hindi"><input type="checkbox" name="hi" id="hindi">Hindi</label>
+                <label for="marati"><input type="checkbox" name="ma" id="marati">Marati</label>
+               </fieldset>
+
+               <fieldset>
+                <legend>Radio</legend>
+                <label for="Gender">Gender</label>
+                <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female">Female</label>
+               </fieldset>
+               
+               <fieldset>
+                <legend>Hidden</legend>
+                <label for="Hidden">Hidden</label>
+                <input type="hidden" value="Ac0873789374" name="ac" id="Hidden">
+               </fieldset>
+
+               <fieldset>
+                <legend>Time</legend>
+                <label for="time">Time</label>
+                <input type="time" value="" name="time" id="time">
+               </fieldset>
+
+               <fieldset>
+                <legend>range</legend>
+                <label for="range">range</label>
+                <input type="range" value="90" name="saturation" id="range" min="0" max="100">
+               </fieldset>
+
+               <fieldset>
+                <legend>input buttons</legend>
+                <input type="button" value="default button" onclick="sayHello()">
+                <input type="submit" value="submit button">
+                <input type="reset" value="reset button">
+               </fieldset>
+               
+               <fieldset>
+                <legend>Button elements</legend>
+                <label for="buttons">default button</label>
+                <label for="buttons">default button</label>
+                <label for="submit">submit button</label>
+                <label for="reset">reset button</label>
+
+               </fieldset>
+
+
+
+            </form>
+        </section>
+        <script>
+            function sayHello(){
+                alert("hello")
+            }
+        </script>
+
+       <!-- <script>
+            let date = new Date()
+            console.log(date.toLocaleDateString());
+            console.log(date.toLocalTimeString().split(':')[2].split(" ")[1]);
+            document.getElementById('text').value = date.toLocaleDateString()
+            if(date.toLocaleTimeString().split(':')[2].split(" ")[1] == "am"){
+                console.log('morning');
+
+            }else{
+                console.log('night';)
+            }
+            </script>-->
+    </body>
+</html>
